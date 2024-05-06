@@ -1,6 +1,6 @@
 # Javascript Todo List
 
-- This is a simple to-do list application that allows you to manage your tasks and keep track of things you need to get done. It uses local storage to persist your data, so your lists are saved even when you refresh the page or close your browser.
+- This is a simple to-do list application built with HTML, CSS, SASS and Js that allows you to manage your tasks and keep track of things you need to get done. It uses local storage to persist your data, so your lists are saved even when you refresh the page or close your browser.
 
 ## How to use it
 
