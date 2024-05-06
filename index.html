@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Todo List Web-app</title>
+  </head>
+  <body>
+    <section>
+      <div class="intro">Hello, <span>Ayomide</span></div>
+      <div class="Todo__input">
+        <h3>Create a todo</h3>
+        <form>
+          <input type="text" id="todo-input" />
+          <input type="submit" value="Add Todo" id="todo-btn" />
+        </form>
+      </div>
+      <div class="todo__items">
+        <div class="status">
+          <li>All</li>
+          <li>Active</li>
+          <li>Completed</li>
+        </div>
+        <ul class="task__list"></ul>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/cabeaa4f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

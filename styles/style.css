@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(245, 245, 245);
+  --white: #fff;
+  --off-purple: rgb(223, 18, 175);
+  --overpass: "Overpass", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--overpass);
+  background-color: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 1rem 2rem;
+  background: var(--white);
+  width: 60%;
+  box-shadow: 2px 2px 8px 5px rgba(105, 105, 105, 0.092);
+  border-radius: 15px;
+}
+section .intro {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+section h3 {
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+section form {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+section form input {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+}
+section form :nth-child(1) {
+  flex-basis: 80%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  height: 3.3rem;
+  box-shadow: 2px 2px 8px 5px rgba(105, 105, 105, 0.092);
+}
+section form :nth-child(2) {
+  flex-basis: 20%;
+  padding: 0.2rem 0.4rem;
+  color: #fff;
+  font-weight: 800;
+  font-family: var(--overpass);
+  background: var(--off-purple);
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+section form :nth-child(2):hover {
+  background: #000;
+  transform: scale(1.1);
+}
+section .todo__items {
+  margin-top: 2rem;
+  padding: 0.3rem 0rem;
+}
+section .todo__items li {
+  list-style-type: none;
+}
+section .todo__items .status {
+  display: flex;
+  justify-content: space-between;
+}
+section .todo__items .status li {
+  padding: 0.2rem 0rem;
+}
+section .todo__items .status :first-child {
+  border-bottom: 3px solid var(--off-purple);
+}
+section .task__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2rem;
+}
+section .task__list div {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 2px 2px 8px 5px rgba(105, 105, 105, 0.225);
+}
+section .task__list div li {
+  word-wrap: break-word;
+  width: 80%;
+  padding: 0.2rem 0;
+  height: -moz-max-content;
+  height: max-content;
+}
+section .task__list div li ::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+section .task__list div button {
+  align-self: flex-start;
+  padding: 0rem 0.7rem;
+  font-family: var(--overpass);
+  font-weight: 800;
+  color: black;
+  height: 40px;
+  background: var(--off-purple);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+section .task__list div button:hover {
+  background: #000;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 555px) {
+  section {
+    width: 97%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  section {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
